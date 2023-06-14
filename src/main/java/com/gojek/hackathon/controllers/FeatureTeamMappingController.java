@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("v1/api")
+@CrossOrigin(maxAge = 3600)
 public class FeatureTeamMappingController {
   private final FeatureTeamMappingService service;
 
