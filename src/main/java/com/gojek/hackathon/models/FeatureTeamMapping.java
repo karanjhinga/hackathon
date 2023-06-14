@@ -20,11 +20,19 @@ public class FeatureTeamMapping {
   @Column(name = "id")
   private int id;
 
+  @Column(name = "features")
+  @JsonProperty("title")
+  private String features;
+
+  @Column(name = "sub_team")
+  @JsonProperty("subTeam")
+  private String subTeam;
+
+  @Column(name = "issue_type")
+  @JsonProperty("issueType")
+  private String issueType;
+
   @Column(name = "team")
   @JsonProperty("team")
   private String team;
-
-  @Column(name = "features")
-  @JsonProperty("features")
-  private String features;
 }
